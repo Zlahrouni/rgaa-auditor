@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "rgaa": {
+      "command": "node",
+      "args": ["src/mcp.ts"],
+      "env": { "RGAA_ALLOWED_ORIGINS": "", "RGAA_SANDBOX": "0" },
+      "timeout": 300000
+    }
+  }
+}

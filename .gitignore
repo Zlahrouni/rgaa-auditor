@@ -1,0 +1,20 @@
+node_modules/
+*.log
+.env
+.env.*
+
+# Audit results, saved sessions and evidence (may contain private data)
+audits/
+.sessions/
+
+# Local configuration: copy mcp.example.json
+.mcp.json
+
+# Internal notes
+ANALYSIS.md
+PLAN.md
+COVERAGE.md
+
+# Exam pages and answers stay out of the repository
+rgaa-bench/
+key.json

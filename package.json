@@ -1,0 +1,35 @@
+{
+  "name": "rgaa-auditor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RGAA 4.1.2 auditor usable from any MCP client. Audit only.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "rgaa": "src/cli.ts"
+  },
+  "scripts": {
+    "mcp": "node src/mcp.ts",
+    "demo": "node test/demo.ts",
+    "score": "node bench/score.ts",
+    "test": "node --test --test-concurrency=1 \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "axe-core": "4.14.1",
+    "playwright-core": "1.65.0",
+    "pngjs": "7.0.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@types/node": "26.6.10",
+    "@types/pngjs": "6.0.5",
+    "typescript": "7.0.2"
+  }
+}
